@@ -14,7 +14,7 @@
     $nameArray = str_split($userName);
     $wovelCounter = 0;
 
-
+    //comment
     echo "<h1>Namnet vi skall analysera är: $userName</h1>";
 
 
