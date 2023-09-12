@@ -1,0 +1,144 @@
+@font-face {
+    font-family: firaSans;
+    src: url(/font/Fira_Sans/FiraSans-Light.ttf);
+    
+  }
+  @font-face {
+    font-family: firaSansLight;
+    src: url(/font/Fira_Sans/FiraSans-ExtraLight.ttf);
+    
+  }
+  @font-face {
+    font-family: firaSansBold;
+    src: url(/font/Fira_Sans/FiraSans-Bold.ttf);
+    font-weight:bold;
+    
+  }
+
+  :root {
+    --text-color: #fff;
+    --link-color: #7289da;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    
+    background: #36393e;
+    font-family: 'firaSans';
+    font-size: 16px;
+    color: var(--text-color);
+    margin:0px;
+    
+  }
+p {
+    font-family: 'firaSansLight';
+    font-size: 1rem;
+  }
+  h1 {
+    font-family: 'firaSans';
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom:0px;
+  }
+  h2 {
+    font-family: 'firaSans';
+    font-size:2rem;
+    text-align: center;
+  }
+
+
+nav ul, footer ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    list-style: none;
+}
+ul a {text-decoration:none;
+    color: var(--text-color);
+}
+ul a:hover {text-decoration:underline;
+}
+
+article {
+    text-align: center;
+    margin-top: 3em;
+    background: #424549;
+    border-radius: 0.6rem;
+    padding: 0rem 0rem 0.6rem 0rem;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.19);
+
+}
+article a {text-decoration:none; color: var(--link-color);}
+article a:hover{text-decoration:underline;
+    }
+
+article p {
+    padding: 3rem;
+}
+.introduction {
+    text-align:center; 
+    font-size: 1.5rem;
+    margin-top:0rem;
+}
+
+article img {
+    height:20rem;
+    width: 100%;
+    align-content: center;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem 0.5rem 0% 0%;
+    object-fit:cover;
+}
+
+.author {
+    font-family: firaSansBold;
+}
+
+nav {
+    background:#282b30;
+    padding:20px;}
+
+main {
+    max-width:90%;
+    margin-right:auto;
+    margin-left:auto;
+}
+footer{background:#282b30;}
+.footer-list {
+    margin:0px; 
+    padding: 40px;
+    font-size:32px;
+    text-decoration:none;
+}
+.footer-list li i:hover{
+    color:var(--link-color);
+}
+
+.styling-list{
+    padding:0px;
+    list-style: none;
+    text-align: center;
+}
+
+.styling-list li {
+    margin-bottom:20px;
+    background: #1e2124;
+    border-radius: 10px;
+    padding:20px;
+    font-size: 32px;
+}
+
+.styling-list li:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li:last-child {
+    margin: 0px;
+  }
+  
