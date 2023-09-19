@@ -1,0 +1,42 @@
+body {
+    background:rgb(230, 230, 230);
+    color:rgb(89, 89, 89);
+    text-align:center;
+}
+h1 {
+    color:rgb(62, 59, 59);
+}
+ul {
+    padding:20px;
+    list-style:none;
+    display: table;
+    margin: 0 auto;
+}
+li {
+    padding:20px;
+    margin: 20px 0px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+li:hover {
+    box-shadow: rgba(49, 49, 55, 0.2) 0px 7px 29px 0px;
+}
+
+footer p {color:rgb(62, 59, 59);}
+a {    
+    text-decoration: none;
+    color: rgb(92, 132, 166);
+    font-weight: bold;
+}
+a:hover{
+    animation: link-color 2s;
+    text-decoration: underline;
+}
+
+@keyframes link-color {
+    from {color: rgb(92, 132, 166);}
+    to {color: rgb(28, 55, 79);}
+  }
+  
