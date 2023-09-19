@@ -3,6 +3,7 @@
 
 <ul>
 <?php 
+//using heredoc for HTML readability
 foreach($actors as $actor):
     echo <<<ITEM
         <li><a href="$actor[tmdb_url]">$actor[name]</a> - $actor[character]</li>
