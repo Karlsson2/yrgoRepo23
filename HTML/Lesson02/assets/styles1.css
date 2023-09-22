@@ -1,0 +1,66 @@
+body{
+    font-size:16px;
+}
+main {
+    padding: 1rem 4rem;
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+.top-content{
+    padding: 2rem 0rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;  
+    gap:2rem; 
+}
+nav{
+    font-weight:bold;
+}
+
+nav a {
+    text-decoration: none;
+    color:#000;
+    padding: 0rem 1rem;
+}
+
+.bread-text{
+    font-size: 1.5rem;
+    width:40vw;
+}
+
+h1{
+    font-size: 4rem;
+    margin:0px;
+}
+.bottom-image{
+    width:100%;
+    object-fit: cover;
+    height: 40vh;
+}
+.cta {
+    font-size:1.2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.cta p {
+    margin:0px;
+}
+
+.cta p:nth-child(2){
+    font-weight:bold;
+    text-decoration: underline;
+}
+.logo {
+    font-weight:bold;
+    font-size:1.5rem;
+}
+
