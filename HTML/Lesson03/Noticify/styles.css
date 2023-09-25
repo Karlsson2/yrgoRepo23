@@ -1,0 +1,188 @@
+:root {
+    --red: #fa6262;
+    --blue: #cae9f2;
+    --bg-gray: #fbfbfb;
+    --yellow: #fffacc;
+    --green: #e2efc7;
+    --pink: #efc7c7;
+    --font-color: #000;
+    --blue-solid: #a1dbed;
+    --green-solid: #d4eda1;
+    --white-solid: #ffffff;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-size:16px;
+    background-color: var(--white-solid);
+    font-family: 'Poppins', sans-serif;;
+}
+
+.main-container{
+    width: 95vW;
+    margin: 0 auto;
+}
+
+.content-container {
+    display:flex;
+    justify-content: space-between;
+    gap:2em;
+}
+
+h1{
+    font-size:4rem;
+    font-weight:800;
+    line-height:4rem;
+}
+h2{
+    font-size:2rem;
+    font-weight:800;
+}
+.cards {
+    width:60%;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 1em;
+    height:80vh;
+   
+}
+.card {
+    border-radius: 20px;
+    background-color: var(--bg-gray);
+    width: calc(50% - 1em);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    height:50%;
+}
+.button-container {
+    height:2.5rem;
+}
+.card-button {
+    background-color: var(--red);
+    width: 2.5rem;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    bottom: 0;
+    border-radius: 0 0 15px 0;
+}
+.card-text{
+    font-size:1rem;
+}
+
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    gap:1em;
+}
+
+.tag {
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+}
+
+.tag-yellow {
+    background-color: var(--yellow);
+}
+.tag-blue {
+    background-color: var(--blue);
+}
+.tag-green {
+    background-color: var(--green);
+}
+.tag-red {
+    background-color: var(--pink);
+}
+.welcome-message {
+    width:40%;
+    padding:2rem;
+}
+.welcome-buttons {
+    display:flex;
+    align-items: flex-start;
+    margin-top:2rem;
+}
+.button:last-child{
+    margin-left:1rem;
+}
+.welcome-text{
+    margin-top:2rem;
+}
+
+.button {
+    display:flex;
+    align-items: center;
+    justify-content:left;
+    width: 10rem;
+    border-radius:10px;
+    position:relative;
+    height:2.5rem;
+}
+.button-text{
+    font-size:0.9rem;
+    margin-left:2rem;
+}
+
+.button-blue {
+    background-color: var(--blue);
+}
+.button-green {
+    background-color: var(--green);
+}
+
+.button-arrow-blue {
+    position:absolute;
+    right:0;
+    background-color: var(--blue-solid);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.button-arrow-green {
+    position:absolute;
+    right:0;
+    background-color: var(--green-solid);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.button img {
+    height:0.8rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 800;
+    margin: 0 1rem;
+}
+
+.logo{
+    color: var(--red);
+    font-weight: 800;
+    font-size: 2rem;
+}
