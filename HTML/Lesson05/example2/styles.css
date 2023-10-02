@@ -1,0 +1,37 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.grid-item {
+  background: cornflowerblue;
+  height: 300px;
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .grid-item {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (min-width: 900px) {
+  .grid-item {
+    width: calc(25% - 20px);
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    font-family: serif;
+  }
+}
+@media screen and (orientation: portrait) {
+  body {
+    font-family: sans-serif;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .grid-item.adaptive {
+    background-color: red;
+  }
+}

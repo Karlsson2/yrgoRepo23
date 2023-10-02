@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hotpink;
+  height: 100vh;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background-color: yellowgreen;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: cornflowerblue;
+  }
+}
