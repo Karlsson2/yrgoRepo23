@@ -35,7 +35,7 @@ let shortName = splitName[0] + " " + splitName[2];
 //console.log(songs);
 
 songs.forEach((name, index) => {
-  console.log(`${index}. ${name}`);
+  console.log(`${index + 1}. ${name}`);
 });
 
 for (i = 0; i < songs.length; i++) {
