@@ -7,7 +7,7 @@ $stars = [
     ['color' => 'yellow', 'size' => 1],
 ];
 
-$animation = ["star-1", "star-2", "star-3", "star-4", "star-5"]
+$animation = ["star-1", "star-2", "star-3", "star-4",]
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +73,7 @@ $animation = ["star-1", "star-2", "star-3", "star-4", "star-5"]
         @keyframes twinkle-2 {
             20% {
                 transform: scale(0.5);
-                opacity: 0.2;
+                opacity: 0.5;
             }
         }
     </style>
