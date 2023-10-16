@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.zoomlevel {
+  display: flex;
+  flex-direction: column;
+}
+.chessboard {
+  zoom: 100%;
+}
+.row {
+  display: flex;
+}
+.square {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.square-odd {
+  background-color: black;
+  color: white;
+}
+.square-even {
+  background-color: white;
+  color: black;
+}
+
+.letter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.selected {
+  background-color: red;
+}
