@@ -1,6 +1,9 @@
 <?php
 
 declare(strict_types=1);
+require __DIR__ . "/functions.php";
+
+
 
 $episodes = [
     ['title' => 'Bed Bugs and Beyond', 'released_at' => strtotime('11 Jun 2015')],
@@ -14,10 +17,6 @@ $episodes = [
     ['title' => 'Tit Punch', 'released_at' => strtotime('11 Jul 2013')],
 ];
 
-$before = array_filter($episodes, function ($episode) {
-    if ($episode["released_at"] < strtotime("2015-12-31") && $episode["released_at"] > strtotime("2015-01-01")) {
-        return ["title" => $episode["title"], "released_at" => $episode["released_at"]];
-    }
-});
-
-var_dump($before);
+foreach ($episodes as $episode) {
+    echo "The episode " . $episode["title"] . " was released " . diffInYears($episode["released_at"]) . "<br/>";
+}
