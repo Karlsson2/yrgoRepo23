@@ -1,0 +1,55 @@
+body {
+  height: 100vh;
+  background: rgb(113, 112, 119);
+  background: linear-gradient(
+    114deg,
+    rgba(113, 112, 119, 1) 0%,
+    rgba(115, 86, 74, 1) 62%
+  );
+}
+.actor-container {
+  color: white;
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+}
+.actor-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+.actor-name {
+  font-weight: bold;
+}
+.movie-information-container {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+.movie-information-container a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.movie-information-container a:hover {
+  color: rgb(178, 153, 153);
+}
+.actor-link {
+  text-decoration: none;
+  color: white;
+}
+
+.actor-link:hover .actor-image {
+  border: rgb(178, 153, 153) 2px solid;
+}
+.actor-link:hover .actor-name,
+.actor-link:hover .character-name {
+  color: rgb(178, 153, 153);
+}
