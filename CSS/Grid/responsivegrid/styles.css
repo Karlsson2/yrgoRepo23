@@ -1,0 +1,29 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.wrapper {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100vh;
+  gap: 20px;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.item:nth-child(even) {
+  background: red;
+}
+.item:nth-child(odd) {
+  background: blue;
+}

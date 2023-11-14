@@ -1,0 +1,55 @@
+.square {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  background-color: purple;
+}
+
+.square:nth-child(1) {
+  transition-property: margin, opacity;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+}
+.square:nth-child(2) {
+  transition-property: margin, opacity, width, transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.square:nth-child(3) {
+  transition-property: margin, opacity, width, background-color, transform;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+}
+.square:nth-child(4) {
+  transition-property: margin, opacity, width, transform, width;
+  transition-duration: 900ms;
+  transition-timing-function: ease-in-out;
+}
+.square:nth-child(5) {
+  transition-property: margin, opacity, width, transform;
+  transition-duration: 600ms;
+  transition-timing-function: ease-in-out;
+}
+
+body:hover .square:nth-child(1) {
+  transform: translateX(250px);
+  opacity: 1;
+}
+body:hover .square:nth-child(2) {
+  transform: translateX(250px);
+  width: 100px;
+  opacity: 1;
+}
+
+body:hover .square:nth-child(3) {
+  transform: translateX(250px);
+  background-color: red;
+}
+body:hover .square:nth-child(4) {
+  transform: translateX(250px);
+  width: 400px;
+}
+body:hover .square:nth-child(5) {
+  transform: translateX(250px);
+}
