@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookieBar</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .cookie-bar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px 20px;
+        color: white;
+        background: blue;
+        align-items: center;
+      }
+      .button {
+        border: none;
+        background: purple;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cookie-bar">
+      <div class="text">
+        This website uses cookies to make sure you get the best experience
+      </div>
+      <button class="button">Accept</button>
+    </div>
+  </body>
+  <script>
+    const button = document.querySelector(".button");
+    const cookieBar = document.querySelector(".cookie-bar");
+    const cookieConsent = getCookieValue("cookie-consent");
+
+    if (cookieConsent == "true") {
+      cookieBar.style.display = "none";
+    }
+    button.addEventListener("click", () => {
+      document.cookie = "cookie-consent=true";
+      cookieBar.style.display = "none";
+    });
+
+    function getCookieValue(name) {
+      const regex = new RegExp(`(^| )${name}=([^;]+)`);
+      const match = document.cookie.match(regex);
+      if (match) {
+        return match[2];
+      }
+    }
+  </script>
+</html>
