@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05</title>
+    <style>
+      p {
+        font-family: system-ui;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conversation-container"></div>
+    <script>
+      const conversation = [
+        {
+          name: "Jim Halpert",
+          message: "Question. What kind of bear is best?",
+        },
+        {
+          name: "Dwight Schrute",
+          message: "That's a ridiculous question.",
+        },
+        {
+          name: "Jim Halpert",
+          message: "False. Black bear.",
+        },
+        {
+          name: "Dwight Schrute",
+          message:
+            "That's debatable. There are basically two schools of thought.",
+        },
+        {
+          name: "Jim Halpert",
+          message: "Fact. Bears eat beets. Bears. Beets. Battlestar Galactica.",
+        },
+        {
+          name: "Dwight Schrute",
+          message: "Bears do not... What is going on?! What are you doing?!",
+        },
+      ];
+
+      const conversationContainer = document.querySelector(
+        ".conversation-container"
+      );
+      let index = 0;
+
+      const printMessage = () => {
+        if (index < conversation.length) {
+          const { name, message } = conversation[index];
+          const p = document.createElement("p");
+          p.textContent = `${name}: ${message}`;
+          conversationContainer.appendChild(p);
+          index++;
+        } else {
+          clearInterval(intervalId);
+        }
+      };
+
+      const intervalId = setInterval(printMessage, 2000);
+    </script>
+  </body>
+</html>

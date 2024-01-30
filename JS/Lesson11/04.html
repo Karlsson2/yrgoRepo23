@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let counter = 0;
+      let myInterval = setInterval(() => {
+        if (counter >= 187) {
+          clearInterval(myInterval);
+        }
+        counter++;
+        console.log(`The Office Episode ${counter}`);
+      }, 1);
+    </script>
+  </body>
+</html>
